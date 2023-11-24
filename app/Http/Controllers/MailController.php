@@ -17,7 +17,7 @@ class MailController extends Controller
         );
 
         $this->dispatch($job);
-        return [ 'status' => 'fin' ];
+        return [ 'status' => 'correo enviado' ];
     }
 
     
