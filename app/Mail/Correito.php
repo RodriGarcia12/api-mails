@@ -24,15 +24,10 @@ class Correito extends Mailable
         $this -> mailSubject = $subject;
     }
 
-    /**
-     * Build the message.
-     *
-     * @return $this
-     */
     public function build()
     {
         $this -> from($this -> mailFrom);
         $this -> subject($this -> mailSubject);
-        return $this->view('mailcito', [ "textito" => $this -> mailSubject]);
+        return $this->view('mail', [ "text" => $this -> mailSubject]);
     }
 }
