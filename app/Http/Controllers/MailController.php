@@ -17,7 +17,7 @@ class MailController extends Controller
         );
 
         $this->dispatch($job);
-        return [ 'status' => 'nos vemo\'' ];
+        return [ 'status' => 'fin' ];
     }
 
     
